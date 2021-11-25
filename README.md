@@ -334,6 +334,10 @@ In another terminal
 cd front_end
 npm start
 ```
+### Deploy to Heroku
+```sh
+heroku ps:scale web=1
+```
 
 ## Demonstration on youtube
 For the final project of CS50 Web I have made a video showing my project,
