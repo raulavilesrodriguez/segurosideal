@@ -7,7 +7,7 @@ export const getcontact = createAsyncThunk(
         console.log('toke99', token)
         try{
             const response = await fetch(
-                `http://asesorseguro.herokuapp.com/capstone/contact/${contact_id}/`,
+                `https://asesorseguro.herokuapp.com/capstone/contact/${contact_id}/`,
                 {
                     method: 'GET',
                     headers: {

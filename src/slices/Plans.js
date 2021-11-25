@@ -5,7 +5,7 @@ export const getplans = createAsyncThunk(
     async({token}, thunkAPI) => {
         try {
             const response = await fetch(
-                'http://asesorseguro.herokuapp.com/capstone/plans/',
+                'https://asesorseguro.herokuapp.com/capstone/plans/',
                 {
                     method: 'GET',
                     headers: {

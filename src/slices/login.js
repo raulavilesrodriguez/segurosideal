@@ -5,7 +5,7 @@ export const loginUser = createAsyncThunk(
     async ({ username, password }, thunkAPI) => {
       try {
         const response = await fetch(
-          'http://asesorseguro.herokuapp.com/capstone/auth/login/',
+          'https://asesorseguro.herokuapp.com/capstone/auth/login/',
           {
             method: 'POST',
             headers: {

@@ -5,7 +5,7 @@ export const signupUser = createAsyncThunk(
     async ({email, username, password1, password2}, thunkAPI) => {
         try {
             const response = await fetch(
-                'http://asesorseguro.herokuapp.com/capstone/auth/register/',
+                'https://asesorseguro.herokuapp.com/capstone/auth/register/',
                 {
                     method: 'POST',
                     headers: {

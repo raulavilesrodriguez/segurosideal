@@ -7,7 +7,7 @@ export const get_contacts = createAsyncThunk(
         console.log('id_usuario', pk);
         try {
             const response = await fetch(
-                `http://asesorseguro.herokuapp.com/capstone/contacts/${pk}/`,
+                `https://asesorseguro.herokuapp.com/capstone/contacts/${pk}/`,
                 {
                     method: 'GET',
                     headers: {

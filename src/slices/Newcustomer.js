@@ -5,7 +5,7 @@ export const newcustomer = createAsyncThunk(
     async({contacto, planes, payment, age, token}, thunkAPI) => {
         try {
             const response = await fetch(
-                'http://asesorseguro.herokuapp.com/capstone/new_customer/',
+                'https://asesorseguro.herokuapp.com/capstone/new_customer/',
                 {
                     method: 'POST',
                     headers: {

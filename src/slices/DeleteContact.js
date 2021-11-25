@@ -5,7 +5,7 @@ export const deletecontact = createAsyncThunk(
     async({contact_id, token}, thunkAPI) => {
         try{
             const response = await fetch(
-                `http://asesorseguro.herokuapp.com/capstone/edit_contact/${contact_id}/`,
+                `https://asesorseguro.herokuapp.com/capstone/edit_contact/${contact_id}/`,
                 {
                     method: 'DELETE',
                     headers: {

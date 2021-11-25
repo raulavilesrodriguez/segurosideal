@@ -5,7 +5,7 @@ export const putcustomer = createAsyncThunk(
     async({contacto, planes, payment, age, customer_id, token}, thunkAPI) => {
         try{
             const response = await fetch(
-                `http://asesorseguro.herokuapp.com/capstone/edit_customer/${customer_id}/`,
+                `https://asesorseguro.herokuapp.com/capstone/edit_customer/${customer_id}/`,
                 {
                     method: 'PUT',
                     headers: {

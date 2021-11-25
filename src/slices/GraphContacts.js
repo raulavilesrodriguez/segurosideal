@@ -5,7 +5,7 @@ export const graphcontacts = createAsyncThunk(
     async ({pk}, thunkAPI) =>{
         try {
             const response = await fetch(
-                `http://asesorseguro.herokuapp.com/capstone/graph_contacts/${pk}/`,
+                `https://asesorseguro.herokuapp.com/capstone/graph_contacts/${pk}/`,
                 {
                     method: 'GET',
                     headers: {

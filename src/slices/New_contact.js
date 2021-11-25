@@ -6,7 +6,7 @@ export const new_contact = createAsyncThunk(
         console.log('token new_contact', token);
         try {
             const response = await fetch(
-                'http://asesorseguro.herokuapp.com/capstone/new_contact/',
+                'https://asesorseguro.herokuapp.com/capstone/new_contact/',
                 {
                     method: 'POST',
                     headers: {
